@@ -21,10 +21,10 @@ $body = 'This is a test email sent using PHPMailer.';
 try {
     // Set SMTP server settings
     $mail->isSMTP();                            // Use SMTP
-    $mail->Host = 'smtp.example.com';            // Set the SMTP server to send through (e.g., Gmail)
+    $mail->Host = 'smtp.gmail.com';             // Gmail SMTP server
     $mail->SMTPAuth = true;                     // Enable SMTP authentication
-    $mail->Username = 'your_email@example.com'; // SMTP username
-    $mail->Password = 'your_password';          // SMTP password
+    $mail->Username = 'mayuri123@gmail.com';    // Your Gmail address
+    $mail->Password = 'your_password_or_app_password'; // Your Gmail password or app password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
     $mail->Port = 587;                          // TCP port to connect to
 
